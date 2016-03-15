@@ -1,0 +1,24 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    @* This sets the html5 mode by making the root ref to '/' *@
+    <base href="/"/>
+    <title></title>
+</head>
+<body>
+    <ul>
+        <li><a ui-sref="Home">Home</a></li>
+        <li><a ui-sref="About">About</a></li>
+        <li><a ui-sref="Profile">Profile</a></li>
+    </ul>
+    <hr />
+
+    <ui-view></ui-view>
+
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="~/ngapp/app.js"></script>
+    <script src="~/ngapp/controllers/homecontroller.js"></script>
+    <script src="~/ngapp/controllers/aboutcontroller.js"></script>
+    <script src="~/ngapp/controllers/profilecontroller.js"></script>
+</body>
+</html>
